@@ -1,0 +1,41 @@
+{
+    "wandb": {
+        "entity": "manuelvh",
+        "name": "transformer_q_v",
+        "group": "q_v",
+        "tags": [],
+        "project": "masterthesis"
+
+    },
+    "model": {
+        "model_type": "base_model",
+        "v_emb_dim": 16,
+        "dim_feedforward": 400,
+        "n_heads": 9,
+        "fc_dim": 128,
+        "dropout_p": 0.1,
+        "sample_rate_video": 10,
+        "n_encoder_layers": 6,
+        "add_choices_as_context": false,
+        "use_pretrained_lm": false,
+        "projection_as_in_aloe": false,
+        "pretrained_lm_name": ""
+    },
+    "training": {
+        "lr": 1e-4,
+        "total_steps": 200000,
+        "warmup_steps": 4000,
+        "accumulate_grad_batches": 1,
+        "batch_size": 50,
+        "epochs": 40, 
+        "seed": null
+    },
+    "datamodule": {
+        "fea_dir": "/scratch/hochmeister/CATER-videos/features/monet_trained_on_cater",
+        "data_dir": "/scratch/hochmeister/DVDData/data/"
+    }, 
+    "checkpoint": {
+        "checkpoint_folder": "/scratch/hochmeister/code/msc2022_hochmeister/project/checkpoints/transformer_model",
+        "checkpoint_file_name": "transformer-with-distilroberta-base"
+    }
+}
