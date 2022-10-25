@@ -39,7 +39,7 @@ class Simmc2Data(pl.LightningDataModule):
         self.args = parse_arguments()
         self.args.train_file = os.path.join(config['datamodule']['data_dir'], 'simmc2.1_dstc11_train.json')
         self.args.dev_file = os.path.join(config['datamodule']['data_dir'], 'simmc2.1_dstc11_dev.json')
-        self.args.devtest_file = os.path.join(config['datamodule']['data_dir'], 'simmc2.1_dstc11_devtest.json')
+        self.args.devtest_file = os.path.join(config['datamodule']['data_dir'], 'simmc2.1_dstc11_teststd_public.json')
         self.args.teststd_file = os.path.join(config['datamodule']['data_dir'], 'simmc2.1_dials_dstc11_dev.json')
         self.args.visual_feature_path = config['datamodule']['fea_dir']
         pretrained_lm_name = config['model']['pretrained_lm_name']

@@ -285,7 +285,7 @@ class GenerativeModel(StateTrackerModel):
                         ]
                     }
                     responses.append(sample)
-            name = 'dstc11-simmc-devtest-pred-subtask-4-generation.json'
+            name = 'dstc11-simmc-teststd-public-pred-subtask-4-generation.json'
             with open(os.path.join(self.output_path, name), 'w') as file:
                 json.dump(responses, file)        
 
