@@ -52,11 +52,9 @@
 - set the output_path in the config file (full path incl. filename for disc. model, only folder path for gen. model)
 - execute test.py
 
-## Other repositories and code snippets used for this thesis
+## Other repositories and code snippets used for this project
 ### Repositories
 - https://github.com/facebookresearch/DVDialogues
-- https://github.com/salesforce/VD-BERT
-- https://github.com/batra-mlp-lab/avsd
 - https://github.com/facebookresearch/simmc2
 
 
